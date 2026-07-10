@@ -1,0 +1,264 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f8ff, #e6f7ff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.pagina-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.texto h1 {
+    font-size: 2.5em;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.texto li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f0f8ff;
+    border-radius: 5px;
+    border-left: 5px solid #8B4513;
+}
+
+.alivio {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.pagina-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.figuras {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.letras {
+    font-size: 1.1em;
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+}
+
+.pagina-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagens-da-pagina-3 {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.avaliation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f0f8ff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avaliation h1 {
+    font-size: 2em;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.comentario {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.image-pessoa {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.frase {
+    font-size: 1em;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.stars {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    gap: 5px;
+}
+
+.stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.agende {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #8B4513;
+    color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agende h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.agendamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agendar {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.algumacoisa {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.algumacoisa label {
+    font-weight: bold;
+    color: #333;
+}
+
+.algumacoisa input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.envia {
+    padding: 10px 20px;
+    background: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.envia:hover {
+    background: #8B4513;
+}
+
+@media (max-width: 768px) {
+    .pagina-1, .pagina-2, .pagina-3, .avaliation, .agende, .agendamento {
+        margin: 10px;
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
+
+    .figuras {
+        max-width: 300px;
+    }
+
+    .letras {
+        font-size: 1em;
+    }
+
+    .comentario {
+        grid-template-columns: 60px 1fr;
+        max-width: 100%;
+    }
+
+    .agendar {
+        max-width: 100%;
+    }
+}
