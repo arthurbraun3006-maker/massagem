@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
@@ -6,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors());
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/agendamento', async (req, res) => {
     const { nome, telefone } = req.body;
