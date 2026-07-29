@@ -28,7 +28,7 @@ app.post('/agendamento', async (req, res) => {
     
     const mailOptions = {
         from: 'arthur.braun3006@gmail.com',
-        to: 'arthur.braun3006@gmail.com',
+        to: 'desilimarosario@gmail.com',
         subject: 'Novo Agendamento de Massagem',
         html: `<img src="https://cdn.vectorstock.com/i/preview-1x/98/37/body-massage-logo-spa-centre-icon-massage-vector-39829837.jpg" alt="Logo da empresa"><h1>Agendamento de Massagem</h1><div style="display: flex; align-items: center;"><img style="width: 75px; height: auto;" src="https://www.freepnglogos.com/uploads/whatsapp-png-logo-1.png"><div><span>Nome: ${nome}</span><br><span>Telefone: ${telefone}</span></div></div>`
     };
