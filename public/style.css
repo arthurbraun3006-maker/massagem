@@ -116,6 +116,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.avaliation-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
 .avaliation h1 {
     font-size: 2em;
     color: #8B4513;
